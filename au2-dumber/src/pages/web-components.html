@@ -3,3 +3,11 @@
 <h2>Consuming a standard comp</h2>
 
 <header-component data-text="Hello Component"></header-component>
+
+<h2>Databinding to a comp</h2>
+
+<button click.delegate="button1Click()">Hello World!</button>
+<button click.delegate="button2Click()">Hello Space!</button>
+<div>${greeting}</div>
+<header-component data-text.bind="greeting"></header-component>
+<header-component data-text="greeting"></header-component>
