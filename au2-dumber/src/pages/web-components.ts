@@ -1,5 +1,5 @@
 export class WebComponents {
-  private _greeting: string = "Hello!";
+  private _greeting = "Hello!";
   public get greeting(): string {
     return this._greeting;
   }
@@ -7,7 +7,9 @@ export class WebComponents {
     this._greeting = v;
   }
 
-  constructor() {}
+  color = 'purple';
+
+  constructor() { }
 
   public button1Click() {
     this._greeting = "Hello World!";
@@ -15,5 +17,9 @@ export class WebComponents {
 
   public button2Click() {
     this._greeting = "Hello Space!";
+  }
+
+  public button3Click() {
+    this.color === 'purple' ? this.color = 'hotpink' : this.color = 'purple';
   }
 }
