@@ -47,7 +47,8 @@
     "lint": "npm run lint:js && npm run lint:html",
     "start": "gulp",
     "build": "gulp clean && cross-env NODE_ENV=production gulp build",
-    "clear-cache": "gulp clear-cache"
+    "clear-cache": "gulp clear-cache",
+    "clean": "npx rimraf ./package-lock.json ./node_modules"
   },
   "overrides": {
     "chokidar": "^3.5.3",
