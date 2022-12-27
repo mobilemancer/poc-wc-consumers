@@ -1,20 +1,14 @@
 <h1>Web Component Tests</h1>
 
 <h2>Consuming a standard comp</h2>
-
 <header-component text="Hello Component"></header-component>
 
 <h2>Databinding to a comp</h2>
-
 <button click.delegate="button1Click()">Hello World!</button>
 <button click.delegate="button2Click()">Hello Space!</button>
 <div>${greeting}</div>
-<header-component text="Hello Component"></header-component>
-<header-component text="${greeting}"></header-component>
-<header-component text.one-time="greeting"></header-component>
-<!-- <header-component text.one-way="greeting"></header-component> -->
-<header-component text.to-view="greeting"></header-component>
-
-<h2>Comp 2</h2>
 <button click.delegate="button3Click()">Switch color!</button>
 <header-component2 color.bind="color" text.bind="greeting"></header-component2>
+
+<h2>Advanced component usage</h2>
+<advanced-component></advanced-component>

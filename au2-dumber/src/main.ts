@@ -7,11 +7,12 @@ import {
 } from "aurelia";
 import { RouterConfiguration } from "@aurelia/router";
 import { MyApp } from "./my-app";
-import { HeaderComponent, HeaderComponent2 } from "poc-wc";
+import { HeaderComponent, HeaderComponent2, AdvancedComponent } from "poc-wc";
 
 Aurelia.register(RouterConfiguration)
   .register(HeaderComponent)
   .register(HeaderComponent2)
+  .register(AdvancedComponent)
   .register(
     AppTask.creating(IContainer, (container) => {
       const attrMapper = container.get(IAttrMapper);
