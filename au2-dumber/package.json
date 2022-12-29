@@ -48,7 +48,7 @@
     "start": "gulp",
     "build": "gulp clean && cross-env NODE_ENV=production gulp build",
     "clear-cache": "gulp clear-cache",
-    "clean": "npx rimraf ./package-lock.json ./node_modules"
+    "clean-install": "npx rimraf ./package-lock.json ./node_modules/poc-wc && npm i"
   },
   "overrides": {
     "chokidar": "^3.5.3",
