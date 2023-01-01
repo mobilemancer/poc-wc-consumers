@@ -9,8 +9,6 @@ export class WebComponents {
 
   color = 'purple';
 
-  constructor() { }
-
   public button1Click() {
     this._greeting = "Hello World!";
   }

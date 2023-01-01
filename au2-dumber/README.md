@@ -36,6 +36,5 @@ In rare situation, you might need to run clear-cache after upgrading to new vers
 
 ## Starting the app
 
-    npm run clean
-    npm i
-    npm run
+    npm run clean-install
+    npm start
