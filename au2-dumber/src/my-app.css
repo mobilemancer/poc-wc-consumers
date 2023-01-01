@@ -1,12 +1,17 @@
+body {
+  background-color: black;
+  color: blanchedalmond;
+}
+
 nav {
-  background: #eee;
+  background: darkgray;
   display: flex;
 }
 
 a {
   padding: 10px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover {
