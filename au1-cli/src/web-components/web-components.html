@@ -1,0 +1,22 @@
+<template>
+  <h1>Web Component Tests</h1>
+
+  <h2>A standard comp</h2>
+  <header-component text="Hello Component"></header-component>
+
+  <h2>Databinding to a comp</h2>
+  <button click.delegate="button1Click()">Hello World!</button>
+  <button click.delegate="button2Click()">Hello Space!</button>
+  <div>${greeting}</div>
+  <button click.delegate="button3Click()">Switch color!</button>
+  <header-component2
+    color.bind="color"
+    text.bind="greeting"
+  ></header-component2>
+
+  <h2>Component with Internal binding</h2>
+  <internal-binding mode.bind="mode"></internal-binding>
+  <button click.delegate="button4Click()">Hello World!</button>
+  <button click.delegate="button5Click()">Hello Space!</button>
+  <p>The end!</p>
+</template>
