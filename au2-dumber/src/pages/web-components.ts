@@ -19,10 +19,17 @@ export class WebComponents {
   public button2Click() {
     this._greeting = "Hello Space!";
     this.mode = 'Hello Space!';
-
   }
 
   public button3Click() {
     this.color === 'purple' ? this.color = 'hotpink' : this.color = 'purple';
+  }
+
+  public button4Click() {
+    this.mode = 'Hello World!';
+  }
+
+  public button5Click() {
+    this.mode = 'Hello Space!';
   }
 }
