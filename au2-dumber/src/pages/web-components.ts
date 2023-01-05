@@ -9,12 +9,17 @@ export class WebComponents {
 
   color = 'purple';
 
+  mode = 'good';
+
   public button1Click() {
     this._greeting = "Hello World!";
+    this.mode = 'Hello World!';
   }
 
   public button2Click() {
     this._greeting = "Hello Space!";
+    this.mode = 'Hello Space!';
+
   }
 
   public button3Click() {
