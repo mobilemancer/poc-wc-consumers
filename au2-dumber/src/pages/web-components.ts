@@ -26,10 +26,10 @@ export class WebComponents {
   }
 
   public button4Click() {
-    this.mode = 'Hello World!';
+    this.mode = 'Dusk 🌆';
   }
 
   public button5Click() {
-    this.mode = 'Hello Space!';
+    this.mode = 'Dawn 🌅';
   }
 }
