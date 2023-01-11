@@ -15,7 +15,8 @@
   ></header-component2>
 
   <h2>Component with Internal binding</h2>
-  <internal-binding mode.bind="mode"></internal-binding>
+  <internal-binding mode.two-way="mode"></internal-binding>
+  <p>${mode}</p>
   <button click.delegate="button4Click()">Hello World!</button>
   <button click.delegate="button5Click()">Hello Space!</button>
   <p>The end!</p>
