@@ -12,30 +12,11 @@ import {
   HeaderComponent2,
   AdvancedComponent,
   InternalBinding,
+  CounterComponent
 } from "poc-wc";
 
 Aurelia.register(RouterConfiguration)
-  .register(HeaderComponent)
-  .register(HeaderComponent2)
-  .register(AdvancedComponent)
-  .register(InternalBinding)
-  .register(
-    AppTask.creating(IContainer, (container) => {
-      const attrMapper = container.get(IAttrMapper);
-      const nodeObserverLocator = container.get(NodeObserverLocator);
-      attrMapper.useTwoWay((el, property) => {
-        switch (el.tagName) {
-          case "header-component2":
-            return property === "color";
-        }
-      });
-      nodeObserverLocator.useConfig({
-        "header-component2": {
-          value: { events: ["change"] },
-        },
-      });
-    })
-  )
-
+  .register(HeaderComponent, HeaderComponent2, AdvancedComponent, InternalBinding)
+  .register(CounterComponent)
   .app(MyApp)
   .start();
